@@ -1,0 +1,50 @@
+{
+  "emprendedores_menos_30": [
+    {
+      "nombre": "Nicolás Rojas",
+      "genero": "Masculino",
+      "emprendimientos": [
+        "Dapta",
+        "Imagine Apps"
+      ],
+      "pregrado": "Ingeniería Industrial",
+      "foto_url": ""
+    },
+    {
+      "nombre": "Juan Pablo Urrea",
+      "genero": "Masculino",
+      "emprendimientos": [
+        "Rentandes"
+      ],
+      "pregrado": "Ingeniería Industrial y Administración",
+      "foto_url": ""
+    },
+    {
+      "nombre": "Sebastián Correa",
+      "genero": "Masculino",
+      "emprendimientos": [
+        "Infinity"
+      ],
+      "pregrado": "Ingeniería Civil",
+      "foto_url": ""
+    },
+    {
+      "nombre": "Martín Peláez",
+      "genero": "Masculino",
+      "emprendimientos": [
+        "Infinity"
+      ],
+      "pregrado": "Ingeniería Mecánica",
+      "foto_url": ""
+    },
+    {
+      "nombre": "Santiago Cala",
+      "genero": "Masculino",
+      "emprendimientos": [
+        "Alfred"
+      ],
+      "pregrado": "Ingeniería Industrial y de Sistemas",
+      "foto_url": ""
+    }
+  ]
+}
