@@ -32,4 +32,9 @@ export class EmprendedorListComponent implements OnInit {
   irADetalle(id: number): void {
     this.router.navigate(['/emprendedores', id]);
   }
+
+  get totalEmprendedores(): number {
+    return this.emprendedores.length;
+  }
+
 }
