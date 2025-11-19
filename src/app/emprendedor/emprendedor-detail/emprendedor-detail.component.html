@@ -1,17 +1,35 @@
-<div *ngIf="emprendedorDetail" style="margin-bottom: 2rem;">
-    <h3>{{emprendedorDetail.nombre}}</h3>
-    <div>
-        <div style="height: 300px; display: inline-block;">
-            <img [src]="emprendedorDetail.foto_url" alt="{{ emprendedorDetail.nombre }}" style="width: 80%; ">
-        </div>
-        
-        <div style="width: 50%; display: inline-block;">
-            <p><strong>Pregrado: </strong> {{emprendedorDetail.pregrado}} </p>
-            <p><strong>Genero: </strong> {{emprendedorDetail.genero}} </p>
-            <p><strong>Emprendimientos: </strong></p>
-            <ul>
-                <li *ngFor="let emprendimiento of emprendedorDetail.emprendimientos">{{ emprendimiento }}</li>
-            </ul>
-        </div>
+<div class="container mt-4" *ngIf="emprendedorDetail">
+
+  <h2 class="text-center p-3 mb-4"
+      style="background-color:#0ae98a; color:white; border-radius:10px;">
+    {{ emprendedorDetail.nombre }}
+  </h2>
+
+  <div class="row align-items-center">
+
+    <div class="col-md-4 text-center">
+      <img [src]="emprendedorDetail.foto_url"
+           alt="{{ emprendedorDetail.nombre }}"
+           class="img-fluid rounded shadow"
+           style="max-height:300px;">
     </div>
+
+    <div class="col-md-8">
+      <p><strong>Pregrado:</strong> {{ emprendedorDetail.pregrado }}</p>
+      <p><strong>Género:</strong> {{ emprendedorDetail.genero }}</p>
+
+      <p><strong>Emprendimientos:</strong></p>
+      <ul>
+        <li *ngFor="let emp of emprendedorDetail.emprendimientos">
+          {{ emp }}
+        </li>
+      </ul>
+
+      <button class="btn btn-success mt-3" (click)="volver()">
+        Volver al listado
+      </button>
+    </div>
+
+  </div>
+
 </div>
